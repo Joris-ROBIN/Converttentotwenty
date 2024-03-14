@@ -27,16 +27,14 @@ def traduction(message):
         contient les entiers traduit en base 20 sous forme
         de chaine de caractère.
 
-    Examples
-    --------
     >>> traduction([4, 0, 16])
-    ['4', '0', 'é']
+    ['4', '0', 'g']
     >>> traduction([5, 1, 4])
     ['5', '1', '4']
     >>> traduction([11, 16])
-    ['µ', 'é']
+    ['b', 'g']
     """
-    base20='0123456789§µ£?%&éçà|'
+    base20='0123456789abcdefghij'
     res = []
     for i in message:
         res.append(base20[i])
@@ -46,3 +44,4 @@ def traduction(message):
 if __name__ == "__main__":
     import doctest
     doctest.testmod()   
+    
